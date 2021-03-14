@@ -20,7 +20,7 @@ import java.util.Scanner;
                 y2 = scan.nextDouble();
 
 		LengthofLine = Math.sqrt(  (Math.pow((x2-x1),2))  + (Math.pow((y2-y1),2)) );
-		System.out.println(LengthofLine);
+		System.out.println("Length Of Line 1: " + LengthofLine);
 
 		System.out.println("Enter the value of x1");
                 //taking input from user
@@ -36,12 +36,13 @@ import java.util.Scanner;
                 y2 = scan.nextDouble();
 
                 LengthofLine2 = Math.sqrt(  (Math.pow((x2-x1),2))  + (Math.pow((y2-y1),2)) );
-                System.out.println(LengthofLine2);
+                System.out.println("Length of Line 2: " + LengthofLine2);
 
 		String s1,s2;
 		s1=Double.toString(LengthofLine);
 		s2=Double.toString(LengthofLine2);
-	        System.out.println("Equality of two length is: " + s1.equals(s2));
+	        System.out.println("Equality of Two Lines Using Equal Method: " + s1.equals(s2));
+		System.out.println("Compare of Two Length is: " + s1.compareTo(s2));
 
 
 	}
